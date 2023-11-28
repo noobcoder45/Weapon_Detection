@@ -1,0 +1,5 @@
+train: ../dataset/dataset/train/images
+val: ../dataset/dataset/valid/images
+
+nc: 1
+names: ['Guns']
