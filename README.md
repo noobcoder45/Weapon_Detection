@@ -7,13 +7,9 @@ First clone the repository from [noobcode45/Weapon_Detection](https://github.com
 git clone https://github.com/noobcoder45/Weapon_Detection.git
 cd YOLO
 ```
-Clone the dataset and saved models
-```
-git clone https://github.com/MaharshiErata/TheOGTeam.git
-cd TheOGTeam
-```
-unzip dataset.zip
-
+download dataset from [Dataset](https://drive.google.com/file/d/17Mw2GslZ8vWNpV1R3aqI9U8x6t1-2jqt/view?usp=sharing)
+Put it in the main directory
+extract the zip file
 Train the yolov5 model with `train.py` with command given below. Replace `[IMG]`, `[BATCH]` and `[EPOCH]` with Number of epochs respectively.
 ```
 python3 train.py --img [IMG] --batch [BATCH] --epochs [EPOCH] --data ./data.yaml --cfg ./models/yolov5x.yaml --weights yolov5x.pt --name yolov5x_weapon
