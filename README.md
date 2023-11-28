@@ -23,11 +23,19 @@ python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source
 ```
 
 ## RCNN
-
+First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git) and go to folder named `YOLO`
+Go to directory `RCNN`
+# For Training 
+Open rcnn_training.ipynb in Google Colab, and run the codes.
+# For Testing
+Open testing_rcnn_models, change the 1) Model path and 2) Test image path of your choice and run.
 
 ## Camera
-In the project directory run the following command
+To use camera for RCNN, in the project directory run the following command
 ```
 python3 camera.py --input_path [add path to input video (0 if webcam)] --model_path [path to .pt file] --output_path [path to save the output]
 python3 camera.py --input_path ./video1.mp4 --model_path ./WeaponDetection_10_resnet2.0.pt --output_path ./output_video.mp4
 ```
+For YOLO
+
+
