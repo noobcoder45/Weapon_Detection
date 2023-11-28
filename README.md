@@ -2,15 +2,20 @@
 
 ## YOLO
 Folder `YOLO` is a clone of [ulralytics/yolov5](https://github.com/ultralytics/yolov5.git) with some changes.
-First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git) and go to folder named `YOLO`
-```
-git clone https://github.com/noobcoder45/Weapon_Detection.git
-cd YOLO
-```
-download dataset from [Dataset](https://drive.google.com/file/d/17Mw2GslZ8vWNpV1R3aqI9U8x6t1-2jqt/view?usp=sharing)
+First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git)
+
+Download dataset from [Dataset](https://drive.google.com/file/d/17Mw2GslZ8vWNpV1R3aqI9U8x6t1-2jqt/view?usp=sharing)
 Put it in the main directory.
 
 Extract the zip file.
+
+Make sure the directory structure is
+Weapon_Detection-main
+|_dataset
+    ...
+|_YOLO
+
+go to YOLO directory
 
 Train the yolov5 model with `train.py` with command given below. Replace `[IMG]`, `[BATCH]` and `[EPOCH]` with Number of epochs respectively.
 ```
@@ -22,6 +27,7 @@ For validation loss, run the below command with best model.
 ```
 python val.py --weight exp/weights/best.pt --data ./data.yaml
 ```
+
 Replace `[model]` with path for best model and `[source]` for image path and run the below command for detection.
 ```
 python detect.py --weights [add path of best model] --source [add file path of image]
