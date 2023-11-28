@@ -33,10 +33,10 @@ python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source
 ## RCNN
 First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git)
 Go to directory `RCNN`
-# For Training 
+### For Training 
 Open rcnn_training.ipynb in Google Colab, and run the codes. The trained model is saved in the Colab Kernel, which can be downloaded and used for testing.
 
-# For Testing
+### For Testing
 Open testing_rcnn_models, change the 1) Model path and 2) Test image path of your choice and run.
 Saved models are also available by downloaded by running the cells.
 
