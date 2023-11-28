@@ -4,7 +4,7 @@
 Folder `YOLO` is a clone of [ulralytics/yolov5](https://github.com/ultralytics/yolov5.git) with some changes.
 First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git)
 
-Download dataset from [Dataset](https://drive.google.com/file/d/17Mw2GslZ8vWNpV1R3aqI9U8x6t1-2jqt/view?usp=sharing)
+Download datasets and models from [Dataset](https://drive.google.com/file/d/17Mw2GslZ8vWNpV1R3aqI9U8x6t1-2jqt/view?usp=sharing)
 Put it in the main directory.
 
 Extract the zip file.
@@ -34,7 +34,7 @@ python detect.py --weights [add path of best model] --source [add file path of i
 python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source ../Weapon-detection-1/test/images/33_jpeg.rf.9ff4cca04f3a1c2ca32fdc53f26c341d.jpg
 ```
 
-Saved yolo model can be downloaded from this link [model](https://drive.google.com/file/d/11WUJGp7KK1rm0yMv29T_d3UfLqlrk_6n/view?usp=sharing)
+Saved yolo model can be found with name SavedModel
 
 
 ## RCNN
@@ -42,10 +42,9 @@ First clone the repository from [noobcode45/Weapon_Detection](https://github.com
 Go to directory `RCNN`
 
 For Training 
-Open rcnn_training.ipynb in Google Colab, and run the codes. The trained model is saved in the Colab Kernel, which can be downloaded and used for testing.
-
+Open rcnn_training.ipynb in Google Colab, upload the dataset, and change the folder path accordingly
 For Testing
-Open testing_rcnn_models, change the 1) Model path and 2) Test image path of your choice and run.
+Open testing_rcnn_models, upload models and test change the 1) Model path and 2) Test image path of your choice and run.
 Saved models are also available by downloaded by running the cells.
 
 ## Camera
