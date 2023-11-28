@@ -10,10 +10,10 @@ Put it in the main directory.
 Extract the zip file.
 
 Make sure the directory structure is
-Weapon_Detection-main
-|_dataset
-    ...
-|_YOLO
+Weapon_Detection-main  
+|_dataset  
+    ...  
+|_YOLO  
 
 go to YOLO directory
 
