@@ -36,6 +36,6 @@ To use camera for RCNN, in the project directory run the following command
 python3 camera.py --input_path [add path to input video (0 if webcam)] --model_path [path to .pt file] --output_path [path to save the output]
 python3 camera.py --input_path ./video1.mp4 --model_path ./WeaponDetection_10_resnet2.0.pt --output_path ./output_video.mp4
 ```
-For YOLO
+For YOLO run the detect as mentioned aboce with --source flag set to 0
 
 
