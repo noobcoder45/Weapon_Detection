@@ -7,11 +7,19 @@ First clone the repository from [noobcode45/Weapon_Detection](https://github.com
 git clone https://github.com/noobcoder45/Weapon_Detection.git
 cd YOLO
 ```
+Clone the dataset and saved models
+```
+git clone https://github.com/MaharshiErata/TheOGTeam.git
+cd TheOGTeam
+```
+unzip dataset.zip
+
 Train the yolov5 model with `train.py` with command given below. Replace `[IMG]`, `[BATCH]` and `[EPOCH]` with Number of epochs respectively.
 ```
 python3 train.py --img [IMG] --batch [BATCH] --epochs [EPOCH] --data ./data.yaml --cfg ./models/yolov5x.yaml --weights yolov5x.pt --name yolov5x_weapon
 python3 train.py --img 480 --batch 4 --epochs 30 --data ./data.yaml --cfg ./models/yolov5x.yaml --weights yolov5x.pt --name yolov5x_weapon
 ```
+
 For validation loss, run the below command with best model.
 ```
 python val.py --weight exp/weights/best.pt --data ./data.yaml
@@ -23,12 +31,14 @@ python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source
 ```
 
 ## RCNN
-First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git) and go to folder named `YOLO`
+First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git)
 Go to directory `RCNN`
 # For Training 
-Open rcnn_training.ipynb in Google Colab, and run the codes.
+Open rcnn_training.ipynb in Google Colab, and run the codes. The trained model is saved in the Colab Kernel, which can be downloaded and used for testing.
+
 # For Testing
 Open testing_rcnn_models, change the 1) Model path and 2) Test image path of your choice and run.
+Saved models are also available by downloaded by running the cells.
 
 ## Camera
 To use camera for RCNN, in the project directory run the following command
