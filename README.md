@@ -34,7 +34,7 @@ python detect.py --weights [add path of best model] --source [add file path of i
 python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source ../Weapon-detection-1/test/images/33_jpeg.rf.9ff4cca04f3a1c2ca32fdc53f26c341d.jpg
 ```
 
-Saved yolo model can be downloaded from this link [model](https://drive.google.com/file/d/1y3YBKakAJFJHs-FhjT3eGNM6HkU8go4p/view?usp=sharing)
+Saved yolo model can be downloaded from this link [model](https://drive.google.com/file/d/11WUJGp7KK1rm0yMv29T_d3UfLqlrk_6n/view?usp=sharing)
 
 
 ## RCNN
