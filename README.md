@@ -48,6 +48,8 @@ For Testing
 Open testing_rcnn_models, upload models and test change the 1) Model path and 2) Test image path of your choice and run.
 Saved models are also available by downloaded by running the cells.
 
+Note: If dataset doesnt upload in colab try recompressing in local directory, or uploading in drive and mounting in colab or use Jupiter Notebook
+
 ## Camera
 To use camera for RCNN, in the project directory run the following command
 ```
