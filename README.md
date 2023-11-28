@@ -23,3 +23,11 @@ python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source
 ```
 
 ## RCNN
+
+
+## Camera
+In the project directory run the following command
+```
+python3 camera.py --input_path [add path to input video (0 if webcam)] --model_path [path to .pt file] --output_path [path to save the output]
+python3 camera.py --input_path ./video1.mp4 --model_path ./WeaponDetection_10_resnet2.0.pt --output_path ./output_video.mp4
+```
