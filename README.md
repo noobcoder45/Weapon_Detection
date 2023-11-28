@@ -8,8 +8,10 @@ git clone https://github.com/noobcoder45/Weapon_Detection.git
 cd YOLO
 ```
 download dataset from [Dataset](https://drive.google.com/file/d/17Mw2GslZ8vWNpV1R3aqI9U8x6t1-2jqt/view?usp=sharing)
-Put it in the main directory
-extract the zip file
+Put it in the main directory.
+
+Extract the zip file.
+
 Train the yolov5 model with `train.py` with command given below. Replace `[IMG]`, `[BATCH]` and `[EPOCH]` with Number of epochs respectively.
 ```
 python3 train.py --img [IMG] --batch [BATCH] --epochs [EPOCH] --data ./data.yaml --cfg ./models/yolov5x.yaml --weights yolov5x.pt --name yolov5x_weapon
@@ -25,6 +27,9 @@ Replace `[model]` with path for best model and `[source]` for image path and run
 python detect.py --weights [add path of best model] --source [add file path of image]
 python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source ../Weapon-detection-1/test/images/33_jpeg.rf.9ff4cca04f3a1c2ca32fdc53f26c341d.jpg
 ```
+
+Saved yolo model can be downloaded from this link [model](https://drive.google.com/file/d/1y3YBKakAJFJHs-FhjT3eGNM6HkU8go4p/view?usp=sharing)
+
 
 ## RCNN
 First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git)
