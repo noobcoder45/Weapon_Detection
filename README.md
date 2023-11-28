@@ -17,7 +17,7 @@ Weapon_Detection-main
 
 go to YOLO directory
 
-Train the yolov5 model with `train.py` with command given below. Replace `[IMG]`, `[BATCH]` and `[EPOCH]` with Number of epochs respectively.
+Train the yolov5 model with `train.py` with command given below. Replace `[IMG]`, `[BATCH]` and `[EPOCH]` .
 ```
 python3 train.py --img [IMG] --batch [BATCH] --epochs [EPOCH] --data ./data.yaml --cfg ./models/yolov5x.yaml --weights yolov5x.pt --name yolov5x_weapon
 python3 train.py --img 480 --batch 4 --epochs 30 --data ./data.yaml --cfg ./models/yolov5x.yaml --weights yolov5x.pt --name yolov5x_weapon
@@ -34,7 +34,7 @@ python detect.py --weights [add path of best model] --source [add file path of i
 python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source ../Weapon-detection-1/test/images/33_jpeg.rf.9ff4cca04f3a1c2ca32fdc53f26c341d.jpg
 ```
 
-Saved yolo model can be found with name SavedModel
+The model we trained and saved yolo model can be found with name SavedModel
 
 
 ## RCNN
@@ -43,6 +43,7 @@ Go to directory `RCNN`
 
 For Training 
 Open rcnn_training.ipynb in Google Colab, upload the dataset, and change the folder path accordingly
+
 For Testing
 Open testing_rcnn_models, upload models and test change the 1) Model path and 2) Test image path of your choice and run.
 Saved models are also available by downloaded by running the cells.
