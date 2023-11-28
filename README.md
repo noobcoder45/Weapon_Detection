@@ -4,7 +4,7 @@
 Folder `YOLO` is a clone of [ulralytics/yolov5](https://github.com/ultralytics/yolov5.git) with some changes.
 First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git)
 
-Download datasets and models from [https://drive.google.com/drive/folders/1U7CdoC5UQ9QmmMAO34Fh85uKQ2s1O4a2?usp=drive_link](https://drive.google.com/drive/folders/1U7CdoC5UQ9QmmMAO34Fh85uKQ2s1O4a2?usp=drive_link)
+Download datasets and models from [https://drive.google.com/drive/folders/1U7CdoC5UQ9QmmMAO34Fh85uKQ2s1O4a2?usp=sharing](https://drive.google.com/drive/folders/1U7CdoC5UQ9QmmMAO34Fh85uKQ2s1O4a2?usp=sharing)
 Put it in the main directory.
 
 Extract the zip file.
