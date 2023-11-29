@@ -4,15 +4,18 @@
 Folder `YOLO` is a clone of [ulralytics/yolov5](https://github.com/ultralytics/yolov5.git) with some changes.
 First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git)
 
-Download datasets and models from [https://drive.google.com/drive/folders/1U7CdoC5UQ9QmmMAO34Fh85uKQ2s1O4a2?usp=sharing](https://drive.google.com/drive/folders/1U7CdoC5UQ9QmmMAO34Fh85uKQ2s1O4a2?usp=sharing)
+Download datasets and models from [DataFiles.zip](https://drive.google.com/drive/folders/1U7CdoC5UQ9QmmMAO34Fh85uKQ2s1O4a2?usp=sharing)
 Put it in the main directory.
 
-Extract the zip file.
+Extract the zip file. Also unzip the dataset.zip in the DataFiles folder.
 
 Make sure the directory structure is
 Weapon_Detection-main  
-|_dataset  
-    ...  
+|_DataFiles
+    |_dataset
+    |_Models
+        ...
+    ...
 |_YOLO  
 
 go to YOLO directory
@@ -30,16 +33,15 @@ For validation loss, run the below command with best model.
 python val.py --weight exp/weights/best.pt --data ./data.yaml
 ```
 
-Replace `[model]` with path for best model and `[source]` for image path and run the below command for detection.
+Replace `[model]` with path for best model and `[image]` for image path and run the below command for detection.
 ```
-python detect.py --weights [add path of best model] --source [add file path of image]
+python detect.py --weights [model] --source [image]
+python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source ../DataFiles/dataset/test/images/1-85-_jpg.rf.d4b4e2a70a38237a43e84589b7f6ce09.jpg
 ```
+We generated some pretrained models. For yolo, use the below command. The model we trained and saved yolo model can be found with name SavedModel
 ```
-python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source ../Weapon-detection-1/test/images/33_jpeg.rf.9ff4cca04f3a1c2ca32fdc53f26c341d.jpg
+python detect.py --weights ../DataFiles/Models/SavedModel.pt --source../DataFiles/dataset/test/images/1-85-_jpg.rf.d4b4e2a70a38237a43e84589b7f6ce09.jpg
 ```
-
-The model we trained and saved yolo model can be found with name SavedModel
-
 
 ## RCNN
 First clone the repository from [noobcode45/Weapon_Detection](https://github.com/noobcoder45/Weapon_Detection.git)
