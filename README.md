@@ -15,7 +15,7 @@ Weapon_Detection-main
 |_dataset \
 |_Models \
     ... \
-|_YOLO \
+|_YOLO 
 
 go to YOLO directory
 
