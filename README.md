@@ -20,6 +20,8 @@ go to YOLO directory
 Train the yolov5 model with `train.py` with command given below. Replace `[IMG]`, `[BATCH]` and `[EPOCH]` .
 ```
 python3 train.py --img [IMG] --batch [BATCH] --epochs [EPOCH] --data ./data.yaml --cfg ./models/yolov5x.yaml --weights yolov5x.pt --name yolov5x_weapon
+```
+```
 python3 train.py --img 480 --batch 4 --epochs 30 --data ./data.yaml --cfg ./models/yolov5x.yaml --weights yolov5x.pt --name yolov5x_weapon
 ```
 
@@ -31,6 +33,8 @@ python val.py --weight exp/weights/best.pt --data ./data.yaml
 Replace `[model]` with path for best model and `[source]` for image path and run the below command for detection.
 ```
 python detect.py --weights [add path of best model] --source [add file path of image]
+```
+```
 python detect.py --weights ./runs/train/yolov5x_weapon2/weights/best.pt --source ../Weapon-detection-1/test/images/33_jpeg.rf.9ff4cca04f3a1c2ca32fdc53f26c341d.jpg
 ```
 
@@ -54,6 +58,8 @@ Note: If dataset doesnt upload in colab try recompressing in local directory, or
 To use camera for RCNN, in the project directory run the following command
 ```
 python3 camera.py --input_path [add path to input video (0 if webcam)] --model_path [path to .pt file] --output_path [path to save the output]
+```
+```
 python3 camera.py --input_path ./video1.mp4 --model_path ./WeaponDetection_10_resnet2.0.pt --output_path ./output_video.mp4
 ```
 For YOLO run the detect as mentioned aboce with --source flag set to 0
